@@ -1,0 +1,17 @@
+{
+  "name": "tasker-tasks",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {},
+  "devDependencies": {
+    "rollup": "^0.45.2",
+    "rollup-plugin-cleanup": "^1.0.1",
+    "rollup-watch": "^4.3.1"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w"
+  },
+  "author": "Ben Fourie",
+  "license": "MIT"
+}
