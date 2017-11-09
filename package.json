@@ -10,7 +10,8 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "watch": "rollup -c -w"
+    "watch": "rollup -c -w",
+    "push": "adb push ./dist/tasklib.js /sdcard/scripts/tasklib.js"
   },
   "author": "Ben Fourie",
   "license": "MIT"
