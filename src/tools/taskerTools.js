@@ -3,9 +3,9 @@
  * @param {Object} values - An object with key value pairs.
  */
 export function exportLocal(values) {
-    Object.keys(values).forEach((key, value) => {
-        setLocal(key, value);
-    });
+    for (var key of Object.keys(values)) {
+        setLocal(key, values[key])
+    }
 }
 
 /**
@@ -13,7 +13,7 @@ export function exportLocal(values) {
  * @param {Object} values - An object with key value pairs.
  */
 export function exportGlobal(values) {
-    Object.keys(values).forEach((key, value) => {
-        setGlobal(key, value);
-    });
+    for (var key of Object.keys(values)) {
+        setGlobal(key, values[key])
+    }
 }

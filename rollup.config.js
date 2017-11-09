@@ -1,8 +1,9 @@
-import cleanup from 'rollup-plugin-cleanup';
+import cleanup from 'rollup-plugin-cleanup'
 
 export default {
-    entry: 'src/tasks/get-packpub-daily-deal.js',
-    dest: 'dist/get-packpub-daily-deal.min.js',
+    entry: 'src/main.js',
+    dest: 'dist/tasklib.js',
     format: 'iife',
+    moduleName: 'tasklib',
     plugins: [cleanup()]
-};
+}
