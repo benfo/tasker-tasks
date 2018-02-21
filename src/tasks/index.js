@@ -1,5 +1,5 @@
-import * as packpub from './packtpub'
+import * as packtpub from './packtpub'
 
 export default {
-  packpub
+  packtpub
 }
