@@ -12,8 +12,8 @@
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-react": "^7.4.0",
     "eslint-plugin-standard": "^3.0.1",
-    "rollup": "^0.45.2",
-    "rollup-plugin-cleanup": "^1.0.1",
+    "rollup": "^0.56.2",
+    "rollup-plugin-cleanup": "^2.0.0",
     "rollup-watch": "^4.3.1"
   },
   "scripts": {
