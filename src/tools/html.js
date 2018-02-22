@@ -3,7 +3,7 @@
  * @param {string} url
  * @param {Object} options
  */
-export function readHtml (url, options) {
+export function queryHtml (url, options) {
   return fetch(url)
     .then(response => response.text())
     .then(bodyText => {
