@@ -5,7 +5,8 @@ export default {
   output: {
     file: 'dist/tasklib.js',
     format: 'iife',
-    name: 'tasklib',
+    name: 'tasklib'
   },
+  context: 'window',
   plugins: [cleanup()]
 }
