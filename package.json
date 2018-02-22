@@ -2,9 +2,12 @@
   "name": "tasker-tasks",
   "version": "1.0.0",
   "description": "",
-  "dependencies": {},
   "devDependencies": {
+    "ava": "^0.25.0",
     "babel-eslint": "^8.0.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
     "eslint": "^4.10.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.9.0",
@@ -14,12 +17,20 @@
     "eslint-plugin-standard": "^3.0.1",
     "rollup": "^0.56.2",
     "rollup-plugin-cleanup": "^2.0.0",
-    "rollup-watch": "^4.3.1"
+    "rollup-watch": "^4.3.1",
+    "transform-runtime": "0.0.0"
   },
   "scripts": {
     "build": "rollup -c",
     "watch": "rollup -c -w",
-    "push": "adb push ./dist/tasklib.js /sdcard/scripts/tasklib.js"
+    "push": "adb push ./dist/tasklib.js /sdcard/scripts/tasklib.js",
+    "test": "ava"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
   },
   "author": "Ben Fourie",
   "license": "MIT"
